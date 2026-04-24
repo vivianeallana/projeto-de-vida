@@ -22,4 +22,40 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    width
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+
+.titulo-principal span {
+    color: var(--verde);
+}
+
+.botao {
+    font-family: "Crhakra Petch", sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    displey: flerx;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    alingf-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--baotao-ativo);
+    border-top: none;
+}
+
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+
+.botoes {
+    displey: block;
+}
