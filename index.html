@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  <head>
-<meta charset="UTF-8>
-<meta name="viewport" content="width=device-width,
-initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Monitor Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
- </head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Agro Sustentável</h1>
+            <p>Equilíbrio entre Produção e Meio Ambiente</p>
+        </header>
+
+        <section class="config-fazenda">
+            <input type="number" name="inputProducao" id="inputProducao" placeholder="Hectares de produção">
+            <input type="number" name="inputPreservacao" id="inputPreservacao" placeholder="Hectares de preservação">
+            <button onclick="atualizarMonitor()">Atualizar painel</button>
+        </section>
+
+        <section class="dashboard">
+            <div class="card" id="cardProducao">
+                <h3>Produção Agrícola</h3>
+                <div class="icone">🚜</div>
+                <p id="txtProducao">0 ha</p>
+            </div>
+
+            <div class="card" id="cardPreservacao">
+                <h3>Área de Preservação</h3>
+                <div class="icone">🌳</div>
+                <p id="txtPreservacao">0 ha</p>
+            </div>
+        </section>
+
+        <div id="mensagemStatus" class="status-box">
+            Aguardando dados para análise...
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
